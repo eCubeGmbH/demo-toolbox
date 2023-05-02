@@ -20,7 +20,7 @@ tools.add({
         en: "niceFunction",
         de: "netteFunktion"
     },
-    args: {
+    argsOld: {
         en: "input1, input2",
         de: "eingabe1, eingabe2"
     },
@@ -47,7 +47,7 @@ tools.add({
         en: "concatValueAndUnit",
         de: "verknüpfeWertUndEinheit"
     },
-    args: {
+    argsOld: {
         en: "param",
         de: "param"
     },
@@ -72,7 +72,7 @@ tools.add({
         en: "removeDuplicates",
         de: "entferneDoppelte"
     },
-    args: {
+    argsOld: {
         en: "inArray",
         de: "inArray"
     },
@@ -100,7 +100,7 @@ tools.add({
         en: "translate",
         de: "übersetze"
     },
-    args: {
+    argsOld: {
         en: "text, target_lang = \"DE\", source_lang = \"\"",
         de: "text, target_lang = \"DE\", source_lang = \"\""
     },
@@ -117,7 +117,7 @@ tools.add({
         en: "multiply",
         de: "multiply"
     },
-    args: {
+    argsOld: {
         en: "text1,text2",
         de: "text1,text2"
     },
@@ -138,7 +138,7 @@ tools.add({
         en: "eanCheck",
         de: "eanCheck"
     },
-    args: {
+    argsOld: {
         en: "s",
         de: "s"
     },
