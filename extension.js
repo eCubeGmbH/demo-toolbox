@@ -24,6 +24,30 @@ tools.add({
         en: "input1, input2",
         de: "eingabe1, eingabe2"
     },
+    args: {
+        en : [{
+            "key" : "input1",
+            "label": "First text",
+            "type": "text",
+            "desc": "First text to add"
+        }, {
+            "key" : "input2",
+            "label": "Second text",
+            "type": "text",
+            "desc": "Second text to add"
+        }],
+        de : [{
+            "key" : "eingabe1",
+            "label": "Erster Text",
+            "type": "text",
+            "desc": "Erster Text zum hinzufügen"
+        }, {
+            "key" : "eingabe2",
+            "label": "Zweiter Text",
+            "type": "text",
+            "desc": "Zweiter Text zum hinzufügen"
+        }]
+    },
     tags: ["demo"],
     tests: () => {
         tools.expect(niceFunction("hello", "world")).toBe('HELLO world');
@@ -51,6 +75,20 @@ tools.add({
         en: "param",
         de: "param"
     },
+    args: {
+        en : [{
+            "key" : "param",
+            "label": "Parameter",
+            "type": "text",
+            "desc": "param.value / param.unit"
+        }],
+        de : [{
+            "key" : "param",
+            "label": "Parameter",
+            "type": "text",
+            "desc": "param.value / param.unit"
+        }]
+    },
     tags: ["demo"]
 })
 
@@ -75,6 +113,20 @@ tools.add({
     argsOld: {
         en: "inArray",
         de: "inArray"
+    },
+    args: {
+        en : [{
+            "key" : "inArray",
+            "label": "Array",
+            "type": "text",
+            "desc": "Array in which duplicates are removed"
+        }],
+        de : [{
+            "key" : "inArray",
+            "label": "Array",
+            "type": "text",
+            "desc": "Array in dem Doppelte entfernt werden"
+        }]
     },
     tags: ["demo"]
 })
@@ -104,6 +156,40 @@ tools.add({
         en: "text, target_lang = \"DE\", source_lang = \"\"",
         de: "text, target_lang = \"DE\", source_lang = \"\""
     },
+    args: {
+        en : [{
+            "key" : "text",
+            "label": "Input text",
+            "type": "text",
+            "desc": "Text to translate"
+        }, {
+            "key" : "target_lang = \"DE\"",
+            "label": "Target Language",
+            "type": "text",
+            "desc": "Target Language"
+        }, {
+            "key" : "source_lang = \"\"",
+            "label": "Source Language",
+            "type": "text",
+            "desc": "Source Language"
+        }],
+        de : [{
+            "key" : "text",
+            "label": "Eingabe Text",
+            "type": "text",
+            "desc": "Text der übersetzt wird"
+        }, {
+            "key" : "target_lang = \"DE\"",
+            "label": "Zielsprache",
+            "type": "text",
+            "desc": "Zielsprache"
+        }, {
+            "key" : "source_lang = \"\"",
+            "label": "Originalsprache",
+            "type": "text",
+            "desc": "Originalsprache"
+        }]
+    },
     tags: ["demo"]
 })
 
@@ -120,6 +206,30 @@ tools.add({
     argsOld: {
         en: "text1,text2",
         de: "text1,text2"
+    },
+    args: {
+        en : [{
+            "key" : "text1",
+            "label": "First text",
+            "type": "text",
+            "desc": "First text to multiply"
+        }, {
+            "key" : "text2",
+            "label": "Second text",
+            "type": "text",
+            "desc": "Second text to multiply"
+        }],
+        de : [{
+            "key" : "text1",
+            "label": "Erster Text",
+            "type": "text",
+            "desc": "Erster Text zum Multiplizieren"
+        }, {
+            "key" : "text2",
+            "label": "Zweiter Text",
+            "type": "text",
+            "desc": "Zweiter Text zum Multiplizieren"
+        }]
     },
     tags: ["demo"]
 })
@@ -141,6 +251,20 @@ tools.add({
     argsOld: {
         en: "s",
         de: "s"
+    },
+    args: {
+        en : [{
+            "key" : "s",
+            "label": "EAN",
+            "type": "text",
+            "desc": "EAN to check"
+        }],
+        de : [{
+            "key" : "s",
+            "label": "EAN",
+            "type": "text",
+            "desc": "Zu überprüfende EAN"
+        }]
     },
     tags: ["demo"]
 })
