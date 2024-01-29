@@ -24,30 +24,24 @@ tools.add({
         en: "input1, input2",
         de: "eingabe1, eingabe2"
     },
-    args: {
-        en : [{
-            "key" : "input1",
-            "label": "First text",
+    args: [
+        {
+            "key": "input1",
+            "label_en": "First text",
+            "label_de": "Erster Text",
             "type": "text",
-            "desc": "First text to add"
-        }, {
-            "key" : "input2",
-            "label": "Second text",
+            "desc_en": "First text to add",
+            "desc_de": "Erster Text zum hinzufügen"
+        },
+        {
+            "key": "input2",
+            "label_en": "Second text",
+            "label_de": "Zweiter Text",
             "type": "text",
-            "desc": "Second text to add"
-        }],
-        de : [{
-            "key" : "eingabe1",
-            "label": "Erster Text",
-            "type": "text",
-            "desc": "Erster Text zum hinzufügen"
-        }, {
-            "key" : "eingabe2",
-            "label": "Zweiter Text",
-            "type": "text",
-            "desc": "Zweiter Text zum hinzufügen"
-        }]
-    },
+            "desc_en": "Second text to add",
+            "desc_de": "Zweiter Text zum hinzufügen"
+        }
+    ],
     tags: ["demo"],
     tests: () => {
         tools.expect(niceFunction("hello", "world")).toBe('HELLO world');
@@ -75,20 +69,16 @@ tools.add({
         en: "param",
         de: "param"
     },
-    args: {
-        en : [{
-            "key" : "param",
-            "label": "Parameter",
+    args: [
+        {
+            "key": "param",
+            "label_en": "Parameter",
+            "label_de": "Parameter",
             "type": "text",
-            "desc": "param.value / param.unit"
-        }],
-        de : [{
-            "key" : "param",
-            "label": "Parameter",
-            "type": "text",
-            "desc": "param.value / param.unit"
-        }]
-    },
+            "desc_en": "param.value / param.unit",
+            "desc_de": "param.value / param.unit"
+        }
+    ],
     tags: ["demo"]
 })
 
@@ -114,20 +104,16 @@ tools.add({
         en: "inArray",
         de: "inArray"
     },
-    args: {
-        en : [{
-            "key" : "inArray",
-            "label": "Array",
+    args: [
+        {
+            "key": "inArray",
+            "label_en": "Array",
+            "label_de": "Array",
             "type": "text",
-            "desc": "Array in which duplicates are removed"
-        }],
-        de : [{
-            "key" : "inArray",
-            "label": "Array",
-            "type": "text",
-            "desc": "Array in dem Doppelte entfernt werden"
-        }]
-    },
+            "desc_en": "Array in which duplicates are removed",
+            "desc_de": "Array in dem Doppelte entfernt werden"
+        }
+    ],
     tags: ["demo"]
 })
 
@@ -156,40 +142,32 @@ tools.add({
         en: "text, target_lang = \"DE\", source_lang = \"\"",
         de: "text, target_lang = \"DE\", source_lang = \"\""
     },
-    args: {
-        en : [{
-            "key" : "text",
-            "label": "Input text",
+    args: [
+        {
+            "key": "text",
+            "label_en": "Input text",
+            "label_de": "Eingabe Text",
             "type": "text",
-            "desc": "Text to translate"
-        }, {
-            "key" : "target_lang = \"DE\"",
-            "label": "Target Language",
+            "desc_en": "Text to translate",
+            "desc_de": "Text der übersetzt wird"
+        },
+        {
+            "key": "target_lang = \"DE\"",
+            "label_en": "Target Language",
+            "label_de": "Zielsprache",
             "type": "text",
-            "desc": "Target Language"
-        }, {
-            "key" : "source_lang = \"\"",
-            "label": "Source Language",
+            "desc_en": "Target Language",
+            "desc_de": "Zielsprache"
+        },
+        {
+            "key": "source_lang = \"\"",
+            "label_en": "Source Language",
+            "label_de": "Originalsprache",
             "type": "text",
-            "desc": "Source Language"
-        }],
-        de : [{
-            "key" : "text",
-            "label": "Eingabe Text",
-            "type": "text",
-            "desc": "Text der übersetzt wird"
-        }, {
-            "key" : "target_lang = \"DE\"",
-            "label": "Zielsprache",
-            "type": "text",
-            "desc": "Zielsprache"
-        }, {
-            "key" : "source_lang = \"\"",
-            "label": "Originalsprache",
-            "type": "text",
-            "desc": "Originalsprache"
-        }]
-    },
+            "desc_en": "Source Language",
+            "desc_de": "Originalsprache"
+        }
+    ],
     tags: ["demo"]
 })
 
@@ -207,30 +185,24 @@ tools.add({
         en: "text1,text2",
         de: "text1,text2"
     },
-    args: {
-        en : [{
-            "key" : "text1",
-            "label": "First text",
+    args: [
+        {
+            "key": "text1",
+            "label_en": "First text",
+            "label_de": "Erster Text",
             "type": "text",
-            "desc": "First text to multiply"
-        }, {
-            "key" : "text2",
-            "label": "Second text",
+            "desc_en": "First text to multiply",
+            "desc_de": "Erster Text zum Multiplizieren"
+        },
+        {
+            "key": "text2",
+            "label_en": "Second text",
+            "label_de": "Zweiter Text",
             "type": "text",
-            "desc": "Second text to multiply"
-        }],
-        de : [{
-            "key" : "text1",
-            "label": "Erster Text",
-            "type": "text",
-            "desc": "Erster Text zum Multiplizieren"
-        }, {
-            "key" : "text2",
-            "label": "Zweiter Text",
-            "type": "text",
-            "desc": "Zweiter Text zum Multiplizieren"
-        }]
-    },
+            "desc_en": "Second text to multiply",
+            "desc_de": "Zweiter Text zum Multiplizieren"
+        }
+    ],
     tags: ["demo"]
 })
 
@@ -252,20 +224,16 @@ tools.add({
         en: "s",
         de: "s"
     },
-    args: {
-        en : [{
-            "key" : "s",
-            "label": "EAN",
+    args: [
+        {
+            "key": "s",
+            "label_en": "EAN",
+            "label_de": "EAN",
             "type": "text",
-            "desc": "EAN to check"
-        }],
-        de : [{
-            "key" : "s",
-            "label": "EAN",
-            "type": "text",
-            "desc": "Zu überprüfende EAN"
-        }]
-    },
+            "desc_en": "EAN to check",
+            "desc_de": "Zu überprüfende EAN"
+        }
+    ],
     tags: ["demo"]
 })
 
