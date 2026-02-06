@@ -9,6 +9,7 @@ This document provides instructions for AI agents to create custom reader and wr
 2. **You cannot deploy or verify plugins** - The user must manually deploy plugins to Chioro and test them. Your job is only to write the plugin code.
 
 3. **Focus on writing correct code** - Since you cannot test, ensure your code follows the patterns in this document exactly.
+4. **Don't install the dependencies or run npm** - There is no point to it.
 
 ---
 
