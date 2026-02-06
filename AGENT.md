@@ -12,10 +12,8 @@ This document provides instructions for AI agents to create custom reader and wr
 
 4. **Don't install the dependencies or run npm** - There is no point to it.
 
-5. **All code must be in or included from the main file** - The plugin entry point is defined by the `main` field in `package.json` (typically `index.js`). Either:
-   - Write ALL plugin code directly in this main file, OR
+5. **All code must be in or included from the main file** - The plugin entry point is defined by the `main` field in `package.json` (typically `index.js`). Therefore:
    - Keep the metadata (`tools.add()`, `args`, `tools.exportAll()`) in the main file and put the plugin logic in a separate file that you `require()` in the main file
-
    **WARNING:** Creating separate `.js` files without requiring them in the main file means that code will NOT be loaded. Chioro only loads the file specified in `package.json`'s `main` field.
 
 ---
