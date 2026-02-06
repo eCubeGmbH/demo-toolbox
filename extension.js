@@ -332,7 +332,7 @@ tools.add({
             desc_de: "Anzahl der zu generierenden gefälschten Dokumente (Standard: 10)"
         }
     ],
-    tags: ["dynamic-plugin", "writer"],
+    tags: ["dynamic-plugin", "reader"],
     hideInToolbox: true
 });
 
