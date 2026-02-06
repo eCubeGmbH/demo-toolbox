@@ -9,7 +9,14 @@ This document provides instructions for AI agents to create custom reader and wr
 2. **You cannot deploy or verify plugins** - The user must manually deploy plugins to Chioro and test them. Your job is only to write the plugin code.
 
 3. **Focus on writing correct code** - Since you cannot test, ensure your code follows the patterns in this document exactly.
+
 4. **Don't install the dependencies or run npm** - There is no point to it.
+
+5. **All code must be in or included from the main file** - The plugin entry point is defined by the `main` field in `package.json` (typically `index.js`). Either:
+   - Write ALL plugin code directly in this main file, OR
+   - Keep the metadata (`tools.add()`, `args`, `tools.exportAll()`) in the main file and put the plugin logic in a separate file that you `require()` in the main file
+
+   **WARNING:** Creating separate `.js` files without requiring them in the main file means that code will NOT be loaded. Chioro only loads the file specified in `package.json`'s `main` field.
 
 ---
 
@@ -21,9 +28,18 @@ This document provides instructions for AI agents to create custom reader and wr
 
 ```
 my-plugin/
-├── package.json       # NPM package definition
-├── index.js           # Main plugin code
+├── package.json       # NPM package definition (defines main entry point)
+├── index.js           # Main plugin code - ALL code must be here or required from here
 └── README.md          # Documentation
+```
+
+**CRITICAL:** Chioro only loads the file specified in `package.json`'s `main` field. Either:
+- Write all code in `index.js`, OR
+- Keep the metadata (`tools.add()`, `args`, `tools.exportAll()`) in `index.js` and require the plugin logic:
+```javascript
+// index.js
+const myPlugin = require('./my-plugin-logic.js');
+tools.add({ id: "myPlugin", impl: myPlugin, ... });
 ```
 
 ### package.json Template
