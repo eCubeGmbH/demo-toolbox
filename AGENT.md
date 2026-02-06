@@ -39,7 +39,7 @@ my-plugin/
 ```javascript
 // index.js
 const myPlugin = require('./my-plugin-logic.js');
-tools.add({ id: "myPlugin", impl: myPlugin, ... });
+tools.add({ id: "myPlugin", impl: myPlugin, tags: ["dynamic-plugin", "reader"], ... });
 ```
 
 ### package.json Template
@@ -266,8 +266,34 @@ if (auth.type === 'bearer' && auth.token) {
 | `aliases` | Yes | Object with `en` and `de` names |
 | `simpleDescription` | No | Short description in `en` and `de` |
 | `args` | No | Configuration schema array |
-| `tags` | No | Array of tags (include "reader" or "writer") |
+| `tags` | No | Array of tags — used for grouping and for auto-registration (see below) |
 | `hideInToolbox` | No | Set to `true` for reader/writer plugins |
+
+### Auto-Registration via Tags
+
+The Chioro backend automatically registers scripts as dynamic reader/writer plugins based on their **tags** when a library is loaded. No manual REST API registration is needed.
+
+**Required tags for auto-registration:**
+- `"dynamic-plugin"` — marks this script for auto-registration as a dynamic plugin
+- `"reader"` or `"writer"` — determines the plugin type
+
+**Optional tag:**
+- `"file-based"` — if present, the plugin expects file input/output. If absent, the plugin is API-based (no file stream)
+
+**Behavior:**
+- If a plugin with the same ID is already manually registered, auto-registration is skipped (manual registrations take precedence)
+- These tags are optional — existing tools without them continue to work unchanged
+- Tools without the `"dynamic-plugin"` tag are never auto-registered
+
+**Example tags for an API-based reader:**
+```javascript
+tags: ["dynamic-plugin", "reader"]
+```
+
+**Example tags for a file-based writer:**
+```javascript
+tags: ["dynamic-plugin", "writer", "file-based"]
+```
 
 ## Best Practices (All Plugins)
 
@@ -426,7 +452,7 @@ tools.add({
         { key: "endpoint", label_en: "Endpoint", label_de: "Endpunkt", type: "text", default: "/api/items", desc_en: "API endpoint path", desc_de: "API-Endpunktpfad" },
         { key: "authConfig", label_en: "Authentication", label_de: "Authentifizierung", type: "adminconfig", subType: "BEARER_TOKEN", required: true, desc_en: "Select authentication", desc_de: "Authentifizierung auswählen" }
     ],
-    tags: ["reader", "api"],
+    tags: ["dynamic-plugin", "reader"],
     hideInToolbox: true
 });
 
@@ -574,7 +600,7 @@ tools.add({
         { key: "endpoint", label_en: "Endpoint", label_de: "Endpunkt", type: "text", default: "/api/documents", desc_en: "API endpoint path", desc_de: "API-Endpunktpfad" },
         { key: "authConfig", label_en: "Authentication", label_de: "Authentifizierung", type: "adminconfig", subType: "BASIC_AUTH", required: true, desc_en: "Select authentication", desc_de: "Authentifizierung auswählen" }
     ],
-    tags: ["writer", "api"],
+    tags: ["dynamic-plugin", "writer"],
     hideInToolbox: true
 });
 
@@ -592,4 +618,4 @@ tools.exportAll(exports);
 |--------|--------|--------|
 | Record method | `readRecords: function*()` (generator, yields) | `writeRecord: function(record)` (regular function) |
 | Data flow | Source → Chioro | Chioro → Destination |
-| Tags | `["reader"]` | `["writer"]` |
+| Tags | `["dynamic-plugin", "reader"]` | `["dynamic-plugin", "writer"]` |
