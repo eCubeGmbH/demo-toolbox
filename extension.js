@@ -1,5 +1,6 @@
 const Toolpackage = require('chioro-toolbox/toolpackage')
 const base = require('chioro-toolbox/toolbase')
+const fakeDocumentReader = require('./fake-document-reader.js')
 
 // Toolbox extensions are organized as "Tool Packages".
 // A ToolPackage is a collection of tool descriptions, including tests.
@@ -238,4 +239,32 @@ tools.add({
 })
 
 //-------------WRITE YOUR FUNCTIONS ABOVE THIS LINE------------------
+
+tools.add({
+    id: "fakeDocumentReader",
+    impl: fakeDocumentReader,
+    aliases: {
+        en: "fakeDocumentReader",
+        de: "fakeDocumentReader"
+    },
+    simpleDescription: {
+        en: "Fake Document Reader",
+        de: "Fake-Dokument-Leser"
+    },
+    args: [
+        {
+            key: "count",
+            label_en: "Number of Documents",
+            label_de: "Anzahl der Dokumente",
+            type: "text",
+            default: "10",
+            required: false,
+            desc_en: "How many fake documents to generate (default: 10)",
+            desc_de: "Wie viele Fake-Dokumente generiert werden sollen (Standard: 10)"
+        }
+    ],
+    tags: ["dynamic-plugin", "reader"],
+    hideInToolbox: true
+})
+
 tools.exportAll(exports)
