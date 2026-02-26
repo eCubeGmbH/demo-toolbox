@@ -257,10 +257,10 @@ tools.add({
             label_en: "Number of Documents",
             label_de: "Anzahl der Dokumente",
             type: "text",
-            default: "16",
+            default: "33",
             required: false,
-            desc_en: "How many fake documents to generate (default: 16)",
-            desc_de: "Wie viele Fake-Dokumente generiert werden sollen (Standard: 16)"
+            desc_en: "How many fake documents to generate (default: 33)",
+            desc_de: "Wie viele Fake-Dokumente generiert werden sollen (Standard: 33)"
         }
     ],
     tags: ["dynamic-plugin", "reader"],
