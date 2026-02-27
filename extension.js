@@ -257,10 +257,10 @@ tools.add({
             label_en: "Number of Documents",
             label_de: "Anzahl der Dokumente",
             type: "text",
-            default: "33",
+            default: "11",
             required: false,
-            desc_en: "How many fake documents to generate (default: 33)",
-            desc_de: "Wie viele Fake-Dokumente generiert werden sollen (Standard: 33)"
+            desc_en: "How many fake documents to generate (default: 11)",
+            desc_de: "Wie viele Fake-Dokumente generiert werden sollen (Standard: 11)"
         },
         {
             key: "requiredField",
