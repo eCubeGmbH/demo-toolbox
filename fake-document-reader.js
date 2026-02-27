@@ -1,5 +1,5 @@
 function fakeDocumentReader(config, streamHelper, journal) {
-    var count = parseInt(getConfigValue(config, 'count', '33')) || 33;
+    var count = parseInt(getConfigValue(config, 'count', '11')) || 11;
     var requiredField = getConfigValue(config, 'requiredField', '');
     var documents = [];
     var currentIndex = 0;
