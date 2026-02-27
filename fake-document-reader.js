@@ -1,5 +1,6 @@
 function fakeDocumentReader(config, streamHelper, journal) {
     var count = parseInt(getConfigValue(config, 'count', '33')) || 33;
+    var requiredField = getConfigValue(config, 'requiredField', '');
     var documents = [];
     var currentIndex = 0;
 
@@ -63,6 +64,58 @@ function fakeDocumentReader(config, streamHelper, journal) {
         return year + '-' + month + '-' + day;
     }
 
+    // Standard field names that are always generated
+    var standardFields = [
+        'id', 'firstName', 'lastName', 'email', 'city', 'age',
+        'category', 'status', 'department', 'price', 'quantity',
+        'score', 'createdAt'
+    ];
+
+    function generateFakeValue(fieldName) {
+        // Produce a plausible fake value based on the field name
+        var lower = fieldName.toLowerCase();
+        if (lower.indexOf('date') >= 0 || lower.indexOf('at') >= 0 || lower.indexOf('time') >= 0) {
+            return randomDate();
+        }
+        if (lower.indexOf('price') >= 0 || lower.indexOf('cost') >= 0 || lower.indexOf('amount') >= 0) {
+            return randomPrice();
+        }
+        if (lower.indexOf('count') >= 0 || lower.indexOf('qty') >= 0 || lower.indexOf('quantity') >= 0 || lower.indexOf('num') >= 0) {
+            return randomInt(1, 100);
+        }
+        if (lower.indexOf('score') >= 0 || lower.indexOf('rating') >= 0 || lower.indexOf('rank') >= 0) {
+            return randomInt(0, 100);
+        }
+        if (lower.indexOf('age') >= 0) {
+            return randomInt(18, 75);
+        }
+        if (lower.indexOf('city') >= 0 || lower.indexOf('location') >= 0) {
+            return randomElement(cities);
+        }
+        if (lower.indexOf('category') >= 0 || lower.indexOf('type') >= 0) {
+            return randomElement(categories);
+        }
+        if (lower.indexOf('status') >= 0 || lower.indexOf('state') >= 0) {
+            return randomElement(statuses);
+        }
+        if (lower.indexOf('department') >= 0 || lower.indexOf('dept') >= 0 || lower.indexOf('team') >= 0) {
+            return randomElement(departments);
+        }
+        if (lower.indexOf('email') >= 0 || lower.indexOf('mail') >= 0) {
+            var fn = randomElement(firstNames).toLowerCase();
+            var ln = randomElement(lastNames).toLowerCase();
+            return fn + '.' + ln + '@example.com';
+        }
+        if (lower.indexOf('name') >= 0) {
+            return randomElement(firstNames) + ' ' + randomElement(lastNames);
+        }
+        if (lower.indexOf('id') >= 0) {
+            return 'id-' + randomSuffix();
+        }
+        // Default: a generic fake string value
+        return fieldName + '-' + randomSuffix();
+    }
+
     return {
         open: function() {
             documents = [];
@@ -72,7 +125,7 @@ function fakeDocumentReader(config, streamHelper, journal) {
                 var firstName = randomElement(firstNames);
                 var lastName = randomElement(lastNames);
 
-                documents.push({
+                var doc = {
                     id: generateId(i),
                     firstName: firstName,
                     lastName: lastName,
@@ -86,8 +139,14 @@ function fakeDocumentReader(config, streamHelper, journal) {
                     quantity: randomInt(1, 100),
                     score: randomInt(0, 100),
                     createdAt: randomDate()
-                });
+                };
 
+                // Always include the user-specified required field
+                if (requiredField && standardFields.indexOf(requiredField) < 0) {
+                    doc[requiredField] = generateFakeValue(requiredField);
+                }
+
+                documents.push(doc);
                 journal.onProgress(i + 1);
             }
         },

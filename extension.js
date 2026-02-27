@@ -261,6 +261,16 @@ tools.add({
             required: false,
             desc_en: "How many fake documents to generate (default: 33)",
             desc_de: "Wie viele Fake-Dokumente generiert werden sollen (Standard: 33)"
+        },
+        {
+            key: "requiredField",
+            label_en: "Required Field Name",
+            label_de: "Pflichtfeldname",
+            type: "text",
+            default: "",
+            required: false,
+            desc_en: "Name of one field that will always be present in every generated record. If the name matches a standard field it is already included; otherwise a fake value is generated for it.",
+            desc_de: "Name eines Feldes, das in jedem generierten Datensatz immer vorhanden sein soll. Falls der Name einem Standardfeld entspricht, ist es bereits enthalten; andernfalls wird ein Fake-Wert dafür generiert."
         }
     ],
     tags: ["dynamic-plugin", "reader"],
