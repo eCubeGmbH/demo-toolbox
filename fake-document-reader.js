@@ -24,6 +24,11 @@ function fakeDocumentReader(config, streamHelper, journal) {
     var departments = ['Engineering', 'Marketing', 'Sales', 'Finance',
         'HR', 'Operations', 'Legal', 'Support'];
 
+    var catNames = ['Whiskers', 'Luna', 'Oliver', 'Bella', 'Charlie',
+        'Lucy', 'Max', 'Cleo', 'Simba', 'Nala',
+        'Tiger', 'Mittens', 'Shadow', 'Snowball', 'Oreo',
+        'Pepper', 'Ginger', 'Mochi', 'Pumpkin', 'Coco'];
+
     function randomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -68,7 +73,7 @@ function fakeDocumentReader(config, streamHelper, journal) {
     var standardFields = [
         'id', 'firstName', 'lastName', 'email', 'city', 'age',
         'category', 'status', 'department', 'price', 'quantity',
-        'score', 'createdAt'
+        'score', 'createdAt', 'cat'
     ];
 
     function generateFakeValue(fieldName) {
@@ -131,14 +136,15 @@ function fakeDocumentReader(config, streamHelper, journal) {
                     lastName: lastName,
                     email: firstName.toLowerCase() + '.' + lastName.toLowerCase() + '@example.com',
                     city: randomElement(cities),
-                    age: randomInt(18, 75),
+                    age: randomInt(10, 99),
                     category: randomElement(categories),
                     status: randomElement(statuses),
                     department: randomElement(departments),
                     price: randomPrice(),
                     quantity: randomInt(1, 100),
                     score: randomInt(0, 100),
-                    createdAt: randomDate()
+                    createdAt: randomDate(),
+                    cat: randomElement(catNames)
                 };
 
                 // Always include the user-specified required field
