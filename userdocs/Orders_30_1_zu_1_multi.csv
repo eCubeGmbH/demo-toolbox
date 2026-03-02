@@ -1,0 +1,390 @@
+#record type;buyer ID;order number;order date
+OH;8000;4711;2020-12-24
+#record type;position number;EAN code;price;quantity;volume
+OP;100;6789012345678;4.22;2;200
+OP;200;1234567890123;18.79;3;300
+#record type;position reference;text
+PT;100;keep dry
+PT;100;flammable
+PT;200;handle with care
+PT;200;priority
+PT;200;gift wrap
+#record type;buyer ID;order number;order date
+OH;8001;4712;2020-12-25
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5012345678900;14.06;3;300
+OP;200;6789012345678;4.36;4;400
+OP;300;0098001461305;1.93;5;500
+#record type;position reference;text
+PT;100;this side up
+PT;100;priority
+PT;100;gift wrap
+PT;200;keep dry
+PT;300;avoid moisture
+PT;300;insurance required
+#record type;buyer ID;order number;order date
+OH;8002;4713;2020-12-26
+#record type;position number;EAN code;price;quantity;volume
+OP;100;4006381333931;2.29;4;400
+OP;200;8712345678901;29.90;5;500
+OP;300;1234567890123;19.99;6;600
+OP;400;5012345678900;14.50;7;100
+#record type;position reference;text
+PT;100;fragile
+PT;200;do not stack
+PT;200;insurance required
+PT;300;handle with care
+PT;300;no weekends delivery
+PT;300;don't throw
+PT;400;this side up
+#record type;buyer ID;order number;order date
+OH;8003;4714;2020-12-27
+#record type;position number;EAN code;price;quantity;volume
+OP;100;6789012345678;4.62;5;500
+OP;200;5012345678900;14.94;6;600
+#record type;position reference;text
+PT;100;keep dry
+PT;100;insurance required
+PT;200;this side up
+PT;200;no weekends delivery
+PT;200;don't throw
+#record type;buyer ID;order number;order date
+OH;8004;4715;2020-12-28
+#record type;position number;EAN code;price;quantity;volume
+OP;100;0098001461305;2.11;6;600
+OP;200;1234567890123;21.19;7;100
+OP;300;9780201379624;41.34;8;200
+#record type;position reference;text
+PT;100;avoid moisture
+PT;100;no weekends delivery
+PT;100;don't throw
+PT;200;handle with care
+PT;300;check contents
+PT;300;flammable
+#record type;buyer ID;order number;order date
+OH;8005;4716;2020-12-29
+#record type;position number;EAN code;price;quantity;volume
+OP;100;6789012345678;4.22;7;100
+OP;200;9780201379624;36.66;8;200
+OP;300;0098001461305;1.87;9;300
+OP;400;5012345678900;13.63;10;400
+#record type;position reference;text
+PT;100;keep dry
+PT;200;check contents
+PT;200;flammable
+PT;300;avoid moisture
+PT;300;priority
+PT;300;gift wrap
+PT;400;this side up
+#record type;buyer ID;order number;order date
+OH;8006;4717;2020-12-30
+#record type;position number;EAN code;price;quantity;volume
+OP;100;1234567890123;19.39;8;200
+OP;200;5012345678900;14.06;9;300
+#record type;position reference;text
+PT;100;handle with care
+PT;100;flammable
+PT;200;this side up
+PT;200;priority
+PT;200;gift wrap
+#record type;buyer ID;order number;order date
+OH;8007;4718;2020-12-31
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5901234123457;9.95;9;300
+OP;200;8712345678901;29.90;10;400
+OP;300;0098001461305;1.99;11;500
+#record type;position reference;text
+PT;100;store cool
+PT;100;priority
+PT;100;gift wrap
+PT;200;do not stack
+PT;300;avoid moisture
+PT;300;insurance required
+#record type;buyer ID;order number;order date
+OH;8008;4719;2021-01-01
+#record type;position number;EAN code;price;quantity;volume
+OP;100;0098001461305;2.05;10;400
+OP;200;6789012345678;4.62;11;500
+OP;300;5901234123457;10.25;12;600
+OP;400;5012345678900;14.94;13;100
+#record type;position reference;text
+PT;100;avoid moisture
+PT;200;keep dry
+PT;200;insurance required
+PT;300;store cool
+PT;300;no weekends delivery
+PT;300;don't throw
+PT;400;this side up
+#record type;buyer ID;order number;order date
+OH;8009;4720;2021-01-02
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5012345678900;15.37;11;500
+OP;200;0098001461305;2.11;12;600
+#record type;position reference;text
+PT;100;this side up
+PT;100;insurance required
+PT;200;avoid moisture
+PT;200;no weekends delivery
+PT;200;don't throw
+#record type;buyer ID;order number;order date
+OH;8010;4721;2020-12-24
+#record type;position number;EAN code;price;quantity;volume
+OP;100;1234567890123;18.79;12;600
+OP;200;0098001461305;1.87;13;100
+OP;300;6789012345678;4.22;14;200
+#record type;position reference;text
+PT;100;handle with care
+PT;100;no weekends delivery
+PT;100;don't throw
+PT;200;avoid moisture
+PT;300;keep dry
+PT;300;flammable
+#record type;buyer ID;order number;order date
+OH;8011;4722;2020-12-25
+#record type;position number;EAN code;price;quantity;volume
+OP;100;0098001461305;1.93;13;100
+OP;200;4006381333931;2.22;14;200
+OP;300;9780201379624;37.83;15;300
+OP;400;6789012345678;4.36;16;400
+#record type;position reference;text
+PT;100;avoid moisture
+PT;200;fragile
+PT;200;flammable
+PT;300;check contents
+PT;300;priority
+PT;300;gift wrap
+PT;400;keep dry
+#record type;buyer ID;order number;order date
+OH;8012;4723;2020-12-26
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5901234123457;9.95;14;200
+OP;200;0098001461305;1.99;15;300
+#record type;position reference;text
+PT;100;store cool
+PT;100;flammable
+PT;200;avoid moisture
+PT;200;priority
+PT;200;gift wrap
+#record type;buyer ID;order number;order date
+OH;8013;4724;2020-12-27
+#record type;position number;EAN code;price;quantity;volume
+OP;100;8712345678901;30.80;15;300
+OP;200;1234567890123;20.59;16;400
+OP;300;0098001461305;2.05;17;500
+#record type;position reference;text
+PT;100;do not stack
+PT;100;priority
+PT;100;gift wrap
+PT;200;handle with care
+PT;300;avoid moisture
+PT;300;insurance required
+#record type;buyer ID;order number;order date
+OH;8014;4725;2020-12-28
+#record type;position number;EAN code;price;quantity;volume
+OP;100;0098001461305;2.11;16;400
+OP;200;1234567890123;21.19;17;500
+OP;300;4006381333931;2.43;18;600
+OP;400;8712345678901;31.69;19;100
+#record type;position reference;text
+PT;100;avoid moisture
+PT;200;handle with care
+PT;200;insurance required
+PT;300;fragile
+PT;300;no weekends delivery
+PT;300;don't throw
+PT;400;do not stack
+#record type;buyer ID;order number;order date
+OH;8015;4726;2020-12-29
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5012345678900;13.63;17;500
+OP;200;0098001461305;1.87;18;600
+#record type;position reference;text
+PT;100;this side up
+PT;100;insurance required
+PT;200;avoid moisture
+PT;200;no weekends delivery
+PT;200;don't throw
+#record type;buyer ID;order number;order date
+OH;8016;4727;2020-12-30
+#record type;position number;EAN code;price;quantity;volume
+OP;100;1234567890123;19.39;18;600
+OP;200;8712345678901;29.00;19;100
+OP;300;5901234123457;9.65;20;200
+#record type;position reference;text
+PT;100;handle with care
+PT;100;no weekends delivery
+PT;100;don't throw
+PT;200;do not stack
+PT;300;store cool
+PT;300;flammable
+#record type;buyer ID;order number;order date
+OH;8017;4728;2020-12-31
+#record type;position number;EAN code;price;quantity;volume
+OP;100;6789012345678;4.49;19;100
+OP;200;5901234123457;9.95;20;200
+OP;300;1234567890123;19.99;21;300
+OP;400;5012345678900;14.50;22;400
+#record type;position reference;text
+PT;100;keep dry
+PT;200;store cool
+PT;200;flammable
+PT;300;handle with care
+PT;300;priority
+PT;300;gift wrap
+PT;400;this side up
+#record type;buyer ID;order number;order date
+OH;8018;4729;2021-01-01
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5012345678900;14.94;20;200
+OP;200;0098001461305;2.05;21;300
+#record type;position reference;text
+PT;100;this side up
+PT;100;flammable
+PT;200;avoid moisture
+PT;200;priority
+PT;200;gift wrap
+#record type;buyer ID;order number;order date
+OH;8019;4730;2021-01-02
+#record type;position number;EAN code;price;quantity;volume
+OP;100;8712345678901;31.69;21;300
+OP;200;5012345678900;15.37;22;400
+OP;300;6789012345678;4.76;23;500
+#record type;position reference;text
+PT;100;do not stack
+PT;100;priority
+PT;100;gift wrap
+PT;200;this side up
+PT;300;keep dry
+PT;300;insurance required
+#record type;buyer ID;order number;order date
+OH;8000;4731;2020-12-24
+#record type;position number;EAN code;price;quantity;volume
+OP;100;6789012345678;4.22;22;400
+OP;200;1234567890123;18.79;23;500
+OP;300;8712345678901;28.11;24;600
+OP;400;9780201379624;36.66;25;100
+#record type;position reference;text
+PT;100;keep dry
+PT;200;handle with care
+PT;200;insurance required
+PT;300;do not stack
+PT;300;no weekends delivery
+PT;300;don't throw
+PT;400;check contents
+#record type;buyer ID;order number;order date
+OH;8001;4732;2020-12-25
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5012345678900;14.06;23;500
+OP;200;1234567890123;19.39;24;600
+#record type;position reference;text
+PT;100;this side up
+PT;100;insurance required
+PT;200;handle with care
+PT;200;no weekends delivery
+PT;200;don't throw
+#record type;buyer ID;order number;order date
+OH;8002;4733;2020-12-26
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5901234123457;9.95;24;600
+OP;200;0098001461305;1.99;25;100
+OP;300;1234567890123;19.99;1;200
+#record type;position reference;text
+PT;100;store cool
+PT;100;no weekends delivery
+PT;100;don't throw
+PT;200;avoid moisture
+PT;300;handle with care
+PT;300;flammable
+#record type;buyer ID;order number;order date
+OH;8003;4734;2020-12-27
+#record type;position number;EAN code;price;quantity;volume
+OP;100;0098001461305;2.05;25;100
+OP;200;4006381333931;2.36;1;200
+OP;300;5901234123457;10.25;2;300
+OP;400;9780201379624;40.17;3;400
+#record type;position reference;text
+PT;100;avoid moisture
+PT;200;fragile
+PT;200;flammable
+PT;300;store cool
+PT;300;priority
+PT;300;gift wrap
+PT;400;check contents
+#record type;buyer ID;order number;order date
+OH;8004;4735;2020-12-28
+#record type;position number;EAN code;price;quantity;volume
+OP;100;4006381333931;2.43;1;200
+OP;200;9780201379624;41.34;2;300
+#record type;position reference;text
+PT;100;fragile
+PT;100;flammable
+PT;200;check contents
+PT;200;priority
+PT;200;gift wrap
+#record type;buyer ID;order number;order date
+OH;8005;4736;2020-12-29
+#record type;position number;EAN code;price;quantity;volume
+OP;100;8712345678901;28.11;2;300
+OP;200;6789012345678;4.22;3;400
+OP;300;9780201379624;36.66;4;500
+#record type;position reference;text
+PT;100;do not stack
+PT;100;priority
+PT;100;gift wrap
+PT;200;keep dry
+PT;300;check contents
+PT;300;insurance required
+#record type;buyer ID;order number;order date
+OH;8006;4737;2020-12-30
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5012345678900;14.06;3;400
+OP;200;8712345678901;29.00;4;500
+OP;300;0098001461305;1.93;5;600
+OP;400;1234567890123;19.39;6;100
+#record type;position reference;text
+PT;100;this side up
+PT;200;do not stack
+PT;200;insurance required
+PT;300;avoid moisture
+PT;300;no weekends delivery
+PT;300;don't throw
+PT;400;handle with care
+#record type;buyer ID;order number;order date
+OH;8007;4738;2020-12-31
+#record type;position number;EAN code;price;quantity;volume
+OP;100;4006381333931;2.29;4;500
+OP;200;5012345678900;14.50;5;600
+#record type;position reference;text
+PT;100;fragile
+PT;100;insurance required
+PT;200;this side up
+PT;200;no weekends delivery
+PT;200;don't throw
+#record type;buyer ID;order number;order date
+OH;8008;4739;2021-01-01
+#record type;position number;EAN code;price;quantity;volume
+OP;100;5901234123457;10.25;5;600
+OP;200;6789012345678;4.62;6;100
+OP;300;9780201379624;40.17;7;200
+#record type;position reference;text
+PT;100;store cool
+PT;100;no weekends delivery
+PT;100;don't throw
+PT;200;keep dry
+PT;300;check contents
+PT;300;flammable
+#record type;buyer ID;order number;order date
+OH;8009;4740;2021-01-02
+#record type;position number;EAN code;price;quantity;volume
+OP;100;0098001461305;2.11;6;100
+OP;200;4006381333931;2.43;7;200
+OP;300;8712345678901;31.69;8;300
+OP;400;5012345678900;15.37;9;400
+#record type;position reference;text
+PT;100;avoid moisture
+PT;200;fragile
+PT;200;flammable
+PT;300;do not stack
+PT;300;priority
+PT;300;gift wrap
+PT;400;this side up
