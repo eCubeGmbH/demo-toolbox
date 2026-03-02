@@ -1,6 +1,7 @@
 const Toolpackage = require('chioro-toolbox/toolpackage')
 const base = require('chioro-toolbox/toolbase')
 const fakeDocumentReader = require('./fake-document-reader.js')
+const specialCsvReader = require('./special-csv-reader.js')
 
 // Toolbox extensions are organized as "Tool Packages".
 // A ToolPackage is a collection of tool descriptions, including tests.
@@ -274,6 +275,33 @@ tools.add({
         }
     ],
     tags: ["dynamic-plugin", "reader"],
+    hideInToolbox: true
+})
+
+tools.add({
+    id: "specialCsvReader",
+    impl: specialCsvReader,
+    aliases: {
+        en: "specialCsvReader",
+        de: "specialCsvReader"
+    },
+    simpleDescription: {
+        en: "Special CSV Reader",
+        de: "Spezieller CSV-Leser"
+    },
+    args: [
+        {
+            key: "delimiter",
+            label_en: "Delimiter",
+            label_de: "Trennzeichen",
+            type: "text",
+            default: ";",
+            required: false,
+            desc_en: "Field delimiter character used in the CSV file (default: semicolon)",
+            desc_de: "Trennzeichen zwischen den Feldern in der CSV-Datei (Standard: Semikolon)"
+        }
+    ],
+    tags: ["dynamic-plugin", "reader", "file-based"],
     hideInToolbox: true
 })
 
