@@ -1,6 +1,6 @@
 {
   "flowId" : "7d08a3b8-ec53-4d8d-a2b9-3fcb8035f8a5",
-  "timestamp" : "2026-03-11T08:52:40.239505279+01:00",
+  "timestamp" : "2026-03-11T09:36:47.588551376+01:00",
   "objects" : [ {
     "_id" : "7d08a3b8-ec53-4d8d-a2b9-3fcb8035f8a5",
     "id" : "7d08a3b8-ec53-4d8d-a2b9-3fcb8035f8a5",
@@ -1198,7 +1198,7 @@
     "_id" : "11b013e0-8f5e-4235-ad40-09eac6e9e9c2",
     "id" : "11b013e0-8f5e-4235-ad40-09eac6e9e9c2",
     "configVersion" : "1.3",
-    "version" : 10,
+    "version" : 11,
     "modern" : true,
     "type" : "OPERATION",
     "subType" : "LIST_TRANSFORMATION",
@@ -1212,7 +1212,7 @@
       "label" : "smartCats",
       "assignments" : [ {
         "id" : "c82d9fe7-d38c-472f-9d55-93acd0dfb201",
-        "order" : 1,
+        "order" : 10,
         "target" : "id",
         "targetType" : "STRING",
         "comment" : "Eindeutiger Bezeichner der Katze, aus cat_id übertragen",
@@ -1238,7 +1238,7 @@
         "assignmentSimpleEditConfig" : null
       }, {
         "id" : "a5afc3e4-a081-4f72-80d7-071c35371f91",
-        "order" : 2,
+        "order" : 20,
         "target" : "breed",
         "targetType" : "STRING",
         "comment" : "Rasse extrahieren: Präfix und abschließendes ' age:'-Suffix entfernen",
@@ -1261,7 +1261,7 @@
         }
       }, {
         "id" : "efb935d1-1f4c-471e-8538-89312f99114a",
-        "order" : 3,
+        "order" : 30,
         "target" : "age",
         "targetType" : "STRING",
         "comment" : "Alterszahl aus der Beschreibung extrahieren",
@@ -1284,7 +1284,7 @@
         }
       }, {
         "id" : "bc20dcad-a427-463d-ad8f-7e922e7d2e8e",
-        "order" : 4,
+        "order" : 40,
         "target" : "color",
         "targetType" : "STRING",
         "comment" : "Fellfarbe als Hex-Wert per DataTable-Lookup auf fixedValue abbilden",
@@ -1308,7 +1308,7 @@
         }
       }, {
         "id" : "69529fbc-1659-41f7-b783-7bdfbbcf54c8",
-        "order" : 5,
+        "order" : 50,
         "target" : "bodyLength",
         "targetType" : "STRING",
         "comment" : "Körperlänge in den Quelldaten nicht verfügbar",
@@ -1334,7 +1334,7 @@
         "assignmentSimpleEditConfig" : null
       }, {
         "id" : "8cd4a077-9276-45c1-ada2-fe22a6affe06",
-        "order" : 6,
+        "order" : 60,
         "target" : "image",
         "targetType" : "STRING",
         "comment" : "Bild-URL aus den Quelldaten",
@@ -1354,7 +1354,7 @@
         }
       }, {
         "id" : "60d81c02-2d24-4b77-90c6-d829222b776e",
-        "order" : 7,
+        "order" : 70,
         "target" : "shortDescription",
         "targetType" : "STRING",
         "comment" : "Beschreibungstext durch Entfernen des 'description:'-Präfixes extrahieren",
@@ -1373,13 +1373,22 @@
         }
       }, {
         "id" : "5db64008-3cb5-40f8-b1de-06761b4e51bb",
-        "order" : 8,
+        "order" : 80,
         "target" : "discountedPrice",
         "targetType" : "STRING",
         "comment" : "10% Rabatt für RED_CODE, 20% Rabatt für BLUE_CODE, ansonsten voller Preis",
         "options" : {
           "script" : "decodeConditions($(\"discount\") == \"RED_CODE\", parseFloat($(\"price\")) * 0.9, $(\"discount\") == \"BLUE_CODE\", parseFloat($(\"price\")) * 0.8, $(\"price\"))"
         }
+      }, {
+        "target" : "furTexture",
+        "targetType" : "STRING",
+        "comment" : "Fur texture classification: soft, dense or long — extracted from the description field",
+        "options" : {
+          "script" : "decodeConditions(containsText($(\"description\"), /long/i), \"long\", containsText($(\"description\"), /dense|thick/i), \"dense\", containsText($(\"description\"), /soft|silky|plush/i), \"soft\", null)"
+        },
+        "id" : "f39df9e7-bfc2-44c9-9e7e-2d362547fc92",
+        "order" : 90
       } ]
     } ],
     "taxonomy" : false,
@@ -1387,7 +1396,7 @@
     "productTypeIdentifier" : "productType",
     "productTypePathIdentifier" : "productTypePath",
     "createdAt" : "2026-03-11T08:12:38.823754262+01:00",
-    "updatedAt" : "2026-03-11T08:12:38.823754262+01:00",
+    "updatedAt" : "2026-03-11T08:54:20.875176363+01:00",
     "beginWithEmptyTarget" : false,
     "writeEmptyRecords" : false,
     "createdBy" : "davood.pasdar@ecube.de",
