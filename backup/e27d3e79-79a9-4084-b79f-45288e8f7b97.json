@@ -1,6 +1,6 @@
 {
   "flowId" : "e27d3e79-79a9-4084-b79f-45288e8f7b97",
-  "timestamp" : "2026-03-18T11:36:04.789434709+01:00",
+  "timestamp" : "2026-03-18T12:24:43.619795133+01:00",
   "objects" : [ {
     "_id" : "e27d3e79-79a9-4084-b79f-45288e8f7b97",
     "id" : "e27d3e79-79a9-4084-b79f-45288e8f7b97",
@@ -1063,7 +1063,7 @@
     "positionOfPaperY" : null,
     "notificationConfigs" : null,
     "createdAt" : "2026-02-03T14:01:43.401094217Z",
-    "updatedAt" : "2026-03-18T11:35:55.348304819+01:00",
+    "updatedAt" : "2026-03-18T11:38:11.889147427+01:00",
     "createdBy" : "davood.pasdar@ecube.de",
     "cleanedUpByTimer" : null,
     "updatedBy" : "dominik.czerwenka@mgm-tp.com",
@@ -1653,7 +1653,7 @@
     "_id" : "f8cb6968-7206-448b-ba3a-2dd0b0847e32",
     "id" : "f8cb6968-7206-448b-ba3a-2dd0b0847e32",
     "configVersion" : "1.3",
-    "version" : 260,
+    "version" : 261,
     "modern" : true,
     "type" : "OPERATION",
     "subType" : "LIST_TRANSFORMATION",
@@ -9158,25 +9158,45 @@
             "value" : "RoleCode",
             "groupId" : "valueToMatch",
             "isAttribute" : true,
-            "attributeType" : "text"
+            "attributeType" : "text",
+            "label_en" : "Input text",
+            "label_de" : "Eingabetext",
+            "type" : "text",
+            "desc_en" : "Text to be searched",
+            "desc_de" : "Text, der gesucht wird"
           }, {
             "key" : "lookupTableName",
             "value" : "C4CHS_Account_mapping_Role",
             "groupId" : "lookupTableName",
             "isAttribute" : false,
-            "attributeType" : "data_table"
+            "attributeType" : "data_table",
+            "label_en" : "Datatable name",
+            "label_de" : "Datentablellenname",
+            "type" : "data_table",
+            "desc_en" : "Name of the data table to search in",
+            "desc_de" : "Name der Datentabelle, in der gesucht wird"
           }, {
             "key" : "columnToCompare",
             "value" : "c4c_code",
             "groupId" : "columnToCompare",
             "isAttribute" : false,
-            "attributeType" : "data_table_column"
+            "attributeType" : "data_table_column",
+            "label_en" : "Search column",
+            "label_de" : "Suchspalte",
+            "type" : "data_table_column",
+            "desc_en" : "Column name to search in",
+            "desc_de" : "Spaltenname der Datentabelle, in der gesucht wird"
           }, {
             "key" : "columnToRetrieveValueFrom",
             "value" : "hs_value",
             "groupId" : "columnToRetrieveValueFrom",
             "isAttribute" : false,
-            "attributeType" : "data_table_column"
+            "attributeType" : "data_table_column",
+            "label_en" : "Return column",
+            "label_de" : "Rückgabespalte",
+            "type" : "data_table_column",
+            "desc_en" : "Column name to return the value from",
+            "desc_de" : "Spaltenname der Datentabelle, mit Rückgabewert"
           } ]
         },
         "ruleHitCounter" : null,
@@ -9553,7 +9573,7 @@
     "productTypeIdentifier" : "productType",
     "productTypePathIdentifier" : "productTypePath",
     "createdAt" : "2026-03-03T12:24:21.794784754Z",
-    "updatedAt" : "2026-03-18T11:23:04.416580784+01:00",
+    "updatedAt" : "2026-03-18T11:38:10.390266431+01:00",
     "beginWithEmptyTarget" : true,
     "writeEmptyRecords" : false,
     "createdBy" : "dominik.czerwenka@mgm-tp.com",
