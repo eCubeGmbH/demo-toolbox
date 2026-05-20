@@ -1,6 +1,6 @@
 {
   "flowId" : "6f3cde05-4f9d-4796-abec-46fdac137c4c",
-  "timestamp" : "2026-05-20T19:21:03.422626380+02:00",
+  "timestamp" : "2026-05-20T19:41:33.372550909+02:00",
   "objects" : [ {
     "_id" : "6f3cde05-4f9d-4796-abec-46fdac137c4c",
     "id" : "6f3cde05-4f9d-4796-abec-46fdac137c4c",
@@ -134,7 +134,7 @@
         "status" : null
       },
       "lastExecutionId" : null,
-      "lastExecutionDate" : "2026-05-20T17:16:22.496163421Z",
+      "lastExecutionDate" : "2026-05-20T17:31:00.988806839Z",
       "lastExecutionStatus" : "SUCCESS",
       "readyToProcess" : false,
       "metadata" : {
@@ -154,7 +154,7 @@
     "positionOfPaperY" : null,
     "notificationConfigs" : null,
     "createdAt" : "2026-05-20T16:23:46.161577453Z",
-    "updatedAt" : "2026-05-20T19:16:22.96874684+02:00",
+    "updatedAt" : "2026-05-20T19:31:01.398604512+02:00",
     "createdBy" : "maximilian.kuehne@mgm-tp.com",
     "cleanedUpByTimer" : null,
     "updatedBy" : "maximilian.kuehne@mgm-tp.com",
@@ -258,7 +258,7 @@
       "categories" : null,
       "assignments" : [ {
         "id" : "01KS355CCRKYNMNJ5S5TJJ9QBK",
-        "order" : 0,
+        "order" : 10,
         "precondition" : "",
         "preconditionError" : "",
         "operation" : "EXECUTESCRIPT",
@@ -282,7 +282,7 @@
         "hasErrors" : false
       }, {
         "id" : "01KS355WMD6DV3MMQJM5DGGDE3",
-        "order" : 0,
+        "order" : 20,
         "precondition" : "",
         "preconditionError" : "",
         "operation" : "EXECUTESCRIPT",
@@ -307,7 +307,7 @@
       }, {
         "id" : "b91611ae-8c09-4532-ae89-8e0b1baba121",
         "version" : null,
-        "order" : 1,
+        "order" : 30,
         "precondition" : null,
         "preconditionError" : null,
         "preconditionSimpleEdit" : null,
@@ -337,19 +337,30 @@
           "condition" : null,
           "textToSearch" : null
         } ]
+      }, {
+        "target" : "HS_Team_Members",
+        "targetType" : "STRING",
+        "targetIsScript" : false,
+        "comment" : "Map C4C EmployeeIDs in SAP_Team_Members to HubSpot IDs via User mapping C4C to Hubspot",
+        "options" : {
+          "script" : "JSON.stringify((Array.isArray($(\"SAP_Team_Members\")) ? $(\"SAP_Team_Members\") : JSON.parse($(\"SAP_Team_Members\") || \"[]\" )).map(function(id){ return lookupGet(id, \"User mapping C4C to Hubspot\", \"c4c_code\", \"hs_code\"); }).filter(function(v){ return v != null && v !== \"\"; }))",
+          "createdByAI" : true
+        },
+        "id" : "ceabc88b-b604-448b-b838-6b62f5823814",
+        "order" : 40
       } ]
     } ],
     "updatedBy" : "maximilian.kuehne@mgm-tp.com",
     "configVersion" : "1.4",
     "type" : "OPERATION",
-    "version" : 16,
+    "version" : 19,
     "createdAt" : "2026-05-20T18:44:12.18582166+02:00",
     "modern" : true,
     "createdBy" : "maximilian.kuehne@mgm-tp.com",
     "name" : "Extract Team IDs",
     "subType" : "LIST_TRANSFORMATION",
     "id" : "9ac7af65-a1da-49f7-be48-ca35211ddec8",
-    "updatedAt" : "2026-05-20T19:15:58.969687135+02:00",
+    "updatedAt" : "2026-05-20T19:23:46.048704414+02:00",
     "productTypeIdentifier" : "productType",
     "productTypePathIdentifier" : "productTypePath",
     "updaterIdentifier" : "chiorof851",
