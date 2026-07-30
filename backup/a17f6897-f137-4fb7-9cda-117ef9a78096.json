@@ -1,6 +1,6 @@
 {
   "flowId" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
-  "timestamp" : "2026-07-30T07:29:07.677137099+02:00",
+  "timestamp" : "2026-07-30T07:29:54.810778741+02:00",
   "objects" : [ {
     "_id" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
     "id" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
@@ -254,7 +254,7 @@
     "positionOfPaperY" : null,
     "notificationConfigs" : null,
     "createdAt" : "2026-07-29T10:36:47.032712624Z",
-    "updatedAt" : "2026-07-30T07:29:02.130187576+02:00",
+    "updatedAt" : "2026-07-30T07:29:24.021609418+02:00",
     "createdBy" : "lutz.wagner@mgm-tp.com",
     "cleanedUpByTimer" : null,
     "updatedBy" : "lutz.wagner@mgm-tp.com",
@@ -317,7 +317,7 @@
     "name" : "Datenquelle1",
     "comment" : null,
     "createdAt" : "2026-07-29T12:36:47.059886726+02:00",
-    "updatedAt" : "2026-07-30T07:18:33.632078356+02:00",
+    "updatedAt" : "2026-07-30T07:29:24.027412065+02:00",
     "createdBy" : "lutz.wagner@mgm-tp.com",
     "updatedBy" : "lutz.wagner@mgm-tp.com",
     "updaterIdentifier" : "chioro17f4"
@@ -389,7 +389,7 @@
       "flowId" : null,
       "flowItemId" : null
     },
-    "updatedAt" : "2026-07-30T07:19:06.940283145+02:00"
+    "updatedAt" : "2026-07-30T07:29:24.02917916+02:00"
   }, {
     "_id" : "f25c5f50-feec-4420-8541-54cc351c1406",
     "createdAt" : "2026-07-30T07:21:40.739871175+02:00",
@@ -409,7 +409,7 @@
       "flowId" : null,
       "flowItemId" : null
     },
-    "updatedAt" : "2026-07-30T07:27:22.484808674+02:00",
+    "updatedAt" : "2026-07-30T07:29:24.031074847+02:00",
     "assignmentBlocks" : [ {
       "label" : "Vögel",
       "precondition" : "$(\"Tierart\") == \"Vogel\""
@@ -450,7 +450,7 @@
       "port" : "ohneVoegel"
     } ],
     "version" : 3,
-    "updatedAt" : "2026-07-30T07:28:02.135543476+02:00",
+    "updatedAt" : "2026-07-30T07:29:24.03257666+02:00",
     "updaterIdentifier" : "chioro17f4"
   } ]
 }
