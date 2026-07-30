@@ -1,6 +1,6 @@
 {
   "flowId" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
-  "timestamp" : "2026-07-30T07:20:34.736104516+02:00",
+  "timestamp" : "2026-07-30T07:26:11.765154093+02:00",
   "objects" : [ {
     "_id" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
     "id" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
@@ -94,35 +94,151 @@
         "flowItemId" : null
       },
       "detached" : false,
-      "cleanedUpByTimer" : null,
+      "cleanedUpByTimer" : false,
       "previous" : [ {
         "flowItemId" : "baba10d3-055b-4a3a-848a-b4805de4ef32",
         "portId" : null,
         "sourcePortId" : "out",
         "targetPortId" : "in"
       } ],
-      "resultRecordLists" : null,
-      "resultRecordListsExtended" : null,
+      "resultRecordLists" : [ {
+        "name" : "out",
+        "id" : "04e64c68-d336-4ddd-962b-508b5ffdf232",
+        "subType" : null,
+        "type" : "RECORD_LIST",
+        "flowId" : null,
+        "flowItemId" : null
+      } ],
+      "resultRecordListsExtended" : [ {
+        "id" : "04e64c68-d336-4ddd-962b-508b5ffdf232",
+        "flowId" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
+        "flowItemId" : "fa8effcc-53e9-4ec9-b3ef-f55ec7b90d20",
+        "totalRecords" : 100,
+        "portId" : "out"
+      } ],
       "notificationConfigs" : null,
       "createdAt" : null,
       "updatedAt" : null,
       "latestExecution" : null,
       "lastExecutionId" : null,
-      "lastExecutionDate" : null,
-      "lastExecutionStatus" : null,
+      "lastExecutionDate" : "2026-07-30T05:21:22.088450879Z",
+      "lastExecutionStatus" : "SUCCESS",
       "readyToProcess" : false,
-      "metadata" : null
+      "metadata" : {
+        "_chioroCategoryTree" : null,
+        "_chioroFields" : null
+      }
+    }, {
+      "id" : "9b52a125-104e-4852-8885-513c07fc8c44",
+      "version" : null,
+      "configObject" : {
+        "name" : "VogelSplit",
+        "id" : "f25c5f50-feec-4420-8541-54cc351c1406",
+        "subType" : "SEPARATION",
+        "type" : "OPERATION",
+        "flowId" : null,
+        "flowItemId" : null
+      },
+      "detached" : false,
+      "cleanedUpByTimer" : false,
+      "previous" : [ ],
+      "resultRecordLists" : [ {
+        "name" : "out",
+        "id" : "0c612f4b-b440-4a94-a249-c778e16e28e4",
+        "subType" : null,
+        "type" : "RECORD_LIST",
+        "flowId" : null,
+        "flowItemId" : null
+      } ],
+      "resultRecordListsExtended" : [ {
+        "id" : "0c612f4b-b440-4a94-a249-c778e16e28e4",
+        "flowId" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
+        "flowItemId" : "9b52a125-104e-4852-8885-513c07fc8c44",
+        "totalRecords" : 100,
+        "portId" : "out"
+      } ],
+      "notificationConfigs" : null,
+      "createdAt" : null,
+      "updatedAt" : null,
+      "latestExecution" : null,
+      "lastExecutionId" : null,
+      "lastExecutionDate" : "2026-07-30T05:22:49.034147826Z",
+      "lastExecutionStatus" : "SUCCESS",
+      "readyToProcess" : false,
+      "metadata" : {
+        "_chioroCategoryTree" : null,
+        "_chioroFields" : null
+      }
+    }, {
+      "id" : "afe67cc9-abfd-45de-941b-79c40170ad76",
+      "version" : null,
+      "configObject" : {
+        "name" : "SplitTest",
+        "id" : "f6008c61-51e9-41b0-b32e-60e30e282ca0",
+        "subType" : "SPLIT",
+        "type" : "OPERATION",
+        "flowId" : null,
+        "flowItemId" : null
+      },
+      "detached" : false,
+      "cleanedUpByTimer" : false,
+      "previous" : [ {
+        "flowItemId" : "fa8effcc-53e9-4ec9-b3ef-f55ec7b90d20",
+        "portId" : null,
+        "sourcePortId" : "out",
+        "targetPortId" : "in"
+      } ],
+      "resultRecordLists" : [ {
+        "name" : "9700ba3d-e6c9-4a37-b376-2d2d6c75fa53",
+        "id" : "8e128295-e0b0-4d6c-8c74-be2d721265b1",
+        "subType" : null,
+        "type" : "RECORD_LIST",
+        "flowId" : null,
+        "flowItemId" : null
+      }, {
+        "name" : "24cb70be-ebde-4b49-96d0-d30ec3fc4f95",
+        "id" : "ef9a933d-71cd-4880-aa2d-b1c5ef4dfeaf",
+        "subType" : null,
+        "type" : "RECORD_LIST",
+        "flowId" : null,
+        "flowItemId" : null
+      } ],
+      "resultRecordListsExtended" : [ {
+        "id" : "8e128295-e0b0-4d6c-8c74-be2d721265b1",
+        "flowId" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
+        "flowItemId" : "afe67cc9-abfd-45de-941b-79c40170ad76",
+        "totalRecords" : 23,
+        "portId" : "9700ba3d-e6c9-4a37-b376-2d2d6c75fa53"
+      }, {
+        "id" : "ef9a933d-71cd-4880-aa2d-b1c5ef4dfeaf",
+        "flowId" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
+        "flowItemId" : "afe67cc9-abfd-45de-941b-79c40170ad76",
+        "totalRecords" : 77,
+        "portId" : "24cb70be-ebde-4b49-96d0-d30ec3fc4f95"
+      } ],
+      "notificationConfigs" : null,
+      "createdAt" : null,
+      "updatedAt" : null,
+      "latestExecution" : null,
+      "lastExecutionId" : null,
+      "lastExecutionDate" : "2026-07-30T05:24:38.096721616Z",
+      "lastExecutionStatus" : "SUCCESS",
+      "readyToProcess" : false,
+      "metadata" : {
+        "_chioroCategoryTree" : null,
+        "_chioroFields" : null
+      }
     } ],
     "tags" : null,
-    "displaySettings" : "{\n  \"cells\" : [ {\n    \"position\" : {\n      \"x\" : -600,\n      \"y\" : -30\n    },\n    \"size\" : {\n      \"width\" : 165,\n      \"height\" : 60\n    },\n    \"angle\" : 0,\n    \"type\" : \"chioro.Element\",\n    \"inPorts\" : [ ],\n    \"outPorts\" : [ ],\n    \"ports\" : {\n      \"groups\" : {\n        \"in\" : {\n          \"position\" : {\n            \"name\" : \"left\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#E74C3C\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"left\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        },\n        \"out\" : {\n          \"position\" : {\n            \"name\" : \"right\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"#262626\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#01b62b\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"right\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        }\n      },\n      \"items\" : [ {\n        \"id\" : \"out\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"100\"\n          }\n        },\n        \"group\" : \"out\"\n      } ]\n    },\n    \"markup\" : \"<g transform=\\\"scale(1,1)\\\" class=\\\"rotatable\\\">\\n          <rect class=\\\"body\\\" fill=\\\"#FFE6E6\\\"/>\\n          <rect class=\\\"body\\\" fill=\\\"url(#chioro27c59)\\\"><title class=\\\"comments\\\"></title></rect>\\n          <image class=\\\"comment-icon\\\" width=\\\"12\\\" height=\\\"12\\\" transform=\\\"translate(173, 0)\\\" href=\\\"assets/images/comment.png\\\" />\\n          \\n            \\n              <image class=\\\"icon\\\" width=\\\"24\\\" height=\\\"24\\\" />\\n            \\n          \\n          <text class=\\\"label\\\"/>\\n          <text class=\\\"subtitle\\\" /><text class=\\\"subtitle2\\\" /></g>\",\n    \"portMarkup\" : \"<circle class=\\\"port-body\\\"/>\",\n    \"portLabelMarkup\" : \"<text class=\\\"port-label\\\"/>\",\n    \"id\" : \"baba10d3-055b-4a3a-848a-b4805de4ef32\",\n    \"entityId\" : \"123\",\n    \"entityType\" : \"RECORD_SOURCE\",\n    \"triggerCron\" : \"\",\n    \"z\" : 1,\n    \"entitySubType\" : \"\",\n    \"flowId\" : \"a17f6897-f137-4fb7-9cda-117ef9a78096\",\n    \"flowItemId\" : \"baba10d3-055b-4a3a-848a-b4805de4ef32\",\n    \"attrs\" : {\n      \".label\" : {\n        \"text\" : \"Datenquelle1\",\n        \"ref-x\" : \"0\",\n        \"x\" : 41,\n        \"y\" : 34,\n        \"text-anchor\" : \"left\",\n        \"text-overflow\" : \"ellipsis\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 30,\n        \"fill\" : \"#262626\"\n      },\n      \".comment-icon\" : {\n        \"visibility\" : \"hidden\"\n      },\n      \".body\" : {\n        \"rx\" : 6,\n        \"stroke\" : \"#FFADAD\",\n        \"ry\" : 6,\n        \"color\" : \"#FFE6E6\",\n        \"fill\" : \"#FFE6E6\",\n        \"ref-width\" : \"100%\",\n        \"ref-height\" : \"100%\",\n        \"stroke-width\" : 2\n      },\n      \".icon\" : {\n        \"href\" : \"assets/images/record-source-small.svg\",\n        \"fontSize\" : 32,\n        \"width\" : 20,\n        \"height\" : 20,\n        \"text-anchor\" : \"left\",\n        \"x\" : 14,\n        \"y\" : 20\n      },\n      \".link\" : {\n        \"xlink:href\" : \"\"\n      },\n      \".subtitle\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 14,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      },\n      \".subtitle2\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 52,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      }\n    }\n  }, {\n    \"position\" : {\n      \"x\" : -330,\n      \"y\" : -30\n    },\n    \"size\" : {\n      \"width\" : 165,\n      \"height\" : 60\n    },\n    \"angle\" : 0,\n    \"type\" : \"chioro.Element\",\n    \"inPorts\" : [ {\n      \"label\" : \"in\",\n      \"id\" : \"in\"\n    } ],\n    \"outPorts\" : [ {\n      \"label\" : \"out\",\n      \"id\" : \"out\"\n    } ],\n    \"ports\" : {\n      \"groups\" : {\n        \"in\" : {\n          \"position\" : {\n            \"name\" : \"left\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#E74C3C\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"left\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        },\n        \"out\" : {\n          \"position\" : {\n            \"name\" : \"right\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#01b62b\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"right\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        }\n      },\n      \"items\" : [ {\n        \"id\" : \"in\",\n        \"group\" : \"in\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"in\"\n          }\n        }\n      }, {\n        \"id\" : \"out\",\n        \"group\" : \"out\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"out\"\n          }\n        }\n      } ]\n    },\n    \"markup\" : \"\\n        <g transform=\\\"scale(1,1)\\\" class=\\\"rotatable\\\">\\n          <title class=\\\"comments\\\"></title>\\n          <rect class=\\\"body\\\" fill=\\\"#E2F8FB\\\"/>\\n          <rect class=\\\"body\\\" fill=\\\"url(#chiorob13e)\\\"></rect>\\n          <image class=\\\"comment-icon\\\" width=\\\"12\\\" height=\\\"12\\\" transform=\\\"translate(170, 0)\\\" href=\\\"assets/images/comment.svg\\\" />\\n          <image class=\\\"icon\\\" width=\\\"24\\\" height=\\\"24\\\" />\\n          <text class=\\\"label\\\" />\\n          <text class=\\\"subtitle\\\" />\\n          <text class=\\\"subtitle2\\\" />\\n        </g>\",\n    \"portMarkup\" : \"<circle class=\\\"port-body\\\"/>\",\n    \"portLabelMarkup\" : \"<text class=\\\"port-label\\\"/>\",\n    \"id\" : \"a7e99be3-7819-4dd5-8b94-522e4d690c49\",\n    \"flowItemId\" : \"fa8effcc-53e9-4ec9-b3ef-f55ec7b90d20\",\n    \"flowId\" : \"a17f6897-f137-4fb7-9cda-117ef9a78096\",\n    \"extraAttributes\" : {\n      \"modern\" : true\n    },\n    \"entityType\" : \"OPERATION\",\n    \"entitySubType\" : \"LIST_TRANSFORMATION\",\n    \"triggerCron\" : \"\",\n    \"z\" : 2,\n    \"attrs\" : {\n      \".label\" : {\n        \"text\" : \"Transformation1\",\n        \"ref-x\" : \"0\",\n        \"x\" : 41,\n        \"y\" : 34,\n        \"text-anchor\" : \"left\",\n        \"text-overflow\" : \"ellipsis\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 30,\n        \"fill\" : \"#262626\"\n      },\n      \".body\" : {\n        \"rx\" : 6,\n        \"stroke\" : \"#98D5DD\",\n        \"ry\" : 6,\n        \"color\" : \"#E2F8FB\",\n        \"fill\" : \"#E2F8FB\",\n        \"ref-width\" : \"100%\",\n        \"ref-height\" : \"100%\",\n        \"stroke-width\" : 2\n      },\n      \".icon\" : {\n        \"href\" : \"assets/images/list-transformation-new-small.svg\",\n        \"fontSize\" : 32,\n        \"width\" : 24,\n        \"height\" : 24,\n        \"x\" : 12,\n        \"y\" : 17\n      },\n      \".subtitle\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 14,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      },\n      \".subtitle2\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 52,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      },\n      \".comment-icon\" : {\n        \"visibility\" : \"hidden\"\n      },\n      \".link\" : {\n        \"xlink:href\" : \"#\"\n      }\n    }\n  }, {\n    \"type\" : \"link\",\n    \"source\" : {\n      \"id\" : \"baba10d3-055b-4a3a-848a-b4805de4ef32\",\n      \"port\" : \"out\"\n    },\n    \"target\" : {\n      \"id\" : \"a7e99be3-7819-4dd5-8b94-522e4d690c49\",\n      \"port\" : \"in\"\n    },\n    \"id\" : \"4c067691-b87d-432a-8456-0ee296456771\",\n    \"z\" : 3,\n    \"attrs\" : {\n      \".marker-target\" : {\n        \"stroke\" : \"#262626\",\n        \"fill\" : \"#262626\",\n        \"stroke-width\" : 2,\n        \"d\" : \"M 8,4 L 0,0 L 8,-4 z\"\n      }\n    }\n  } ]\n}",
+    "displaySettings" : "{\n  \"cells\" : [ {\n    \"position\" : {\n      \"x\" : -600,\n      \"y\" : -30\n    },\n    \"size\" : {\n      \"width\" : 165,\n      \"height\" : 60\n    },\n    \"angle\" : 0,\n    \"type\" : \"chioro.Element\",\n    \"inPorts\" : [ ],\n    \"outPorts\" : [ ],\n    \"ports\" : {\n      \"groups\" : {\n        \"in\" : {\n          \"position\" : {\n            \"name\" : \"left\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#E74C3C\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"left\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        },\n        \"out\" : {\n          \"position\" : {\n            \"name\" : \"right\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"#262626\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#01b62b\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"right\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        }\n      },\n      \"items\" : [ {\n        \"id\" : \"out\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"100\"\n          }\n        },\n        \"group\" : \"out\"\n      } ]\n    },\n    \"markup\" : \"<g transform=\\\"scale(1,1)\\\" class=\\\"rotatable\\\">\\n          <rect class=\\\"body\\\" fill=\\\"#FFE6E6\\\"/>\\n          <rect class=\\\"body\\\" fill=\\\"url(#chioro27c59)\\\"><title class=\\\"comments\\\"></title></rect>\\n          <image class=\\\"comment-icon\\\" width=\\\"12\\\" height=\\\"12\\\" transform=\\\"translate(173, 0)\\\" href=\\\"assets/images/comment.png\\\" />\\n          \\n            \\n              <image class=\\\"icon\\\" width=\\\"24\\\" height=\\\"24\\\" />\\n            \\n          \\n          <text class=\\\"label\\\"/>\\n          <text class=\\\"subtitle\\\" /><text class=\\\"subtitle2\\\" /></g>\",\n    \"portMarkup\" : \"<circle class=\\\"port-body\\\"/>\",\n    \"portLabelMarkup\" : \"<text class=\\\"port-label\\\"/>\",\n    \"id\" : \"baba10d3-055b-4a3a-848a-b4805de4ef32\",\n    \"entityId\" : \"123\",\n    \"entityType\" : \"RECORD_SOURCE\",\n    \"triggerCron\" : \"\",\n    \"z\" : 1,\n    \"entitySubType\" : \"\",\n    \"flowId\" : \"a17f6897-f137-4fb7-9cda-117ef9a78096\",\n    \"flowItemId\" : \"baba10d3-055b-4a3a-848a-b4805de4ef32\",\n    \"attrs\" : {\n      \".label\" : {\n        \"text\" : \"Datenquelle1\",\n        \"ref-x\" : \"0\",\n        \"x\" : 41,\n        \"y\" : 34,\n        \"text-anchor\" : \"left\",\n        \"text-overflow\" : \"ellipsis\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 30,\n        \"fill\" : \"#262626\"\n      },\n      \".comment-icon\" : {\n        \"visibility\" : \"hidden\"\n      },\n      \".body\" : {\n        \"rx\" : 6,\n        \"stroke\" : \"#FFADAD\",\n        \"ry\" : 6,\n        \"color\" : \"#FFE6E6\",\n        \"fill\" : \"#FFE6E6\",\n        \"ref-width\" : \"100%\",\n        \"ref-height\" : \"100%\",\n        \"stroke-width\" : 2\n      },\n      \".icon\" : {\n        \"href\" : \"assets/images/record-source-small.svg\",\n        \"fontSize\" : 32,\n        \"width\" : 20,\n        \"height\" : 20,\n        \"text-anchor\" : \"left\",\n        \"x\" : 14,\n        \"y\" : 20\n      },\n      \".link\" : {\n        \"xlink:href\" : \"\"\n      },\n      \".subtitle\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 14,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      },\n      \".subtitle2\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 52,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      }\n    }\n  }, {\n    \"position\" : {\n      \"x\" : -330,\n      \"y\" : -30\n    },\n    \"size\" : {\n      \"width\" : 165,\n      \"height\" : 60\n    },\n    \"angle\" : 0,\n    \"type\" : \"chioro.Element\",\n    \"inPorts\" : [ {\n      \"label\" : \"in\",\n      \"id\" : \"in\"\n    } ],\n    \"outPorts\" : [ {\n      \"label\" : \"out\",\n      \"id\" : \"out\"\n    } ],\n    \"ports\" : {\n      \"groups\" : {\n        \"in\" : {\n          \"position\" : {\n            \"name\" : \"left\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#E74C3C\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"left\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        },\n        \"out\" : {\n          \"position\" : {\n            \"name\" : \"right\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#fff\",\n              \"stroke\" : \"#01b62b\",\n              \"r\" : 5,\n              \"magnet\" : true,\n              \"stroke-width\" : 2\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"right\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        }\n      },\n      \"items\" : [ {\n        \"id\" : \"in\",\n        \"group\" : \"in\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"in\"\n          }\n        }\n      }, {\n        \"id\" : \"out\",\n        \"group\" : \"out\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"out\"\n          }\n        }\n      } ]\n    },\n    \"markup\" : \"\\n        <g transform=\\\"scale(1,1)\\\" class=\\\"rotatable\\\">\\n          <title class=\\\"comments\\\"></title>\\n          <rect class=\\\"body\\\" fill=\\\"#E2F8FB\\\"/>\\n          <rect class=\\\"body\\\" fill=\\\"url(#chiorob13e)\\\"></rect>\\n          <image class=\\\"comment-icon\\\" width=\\\"12\\\" height=\\\"12\\\" transform=\\\"translate(170, 0)\\\" href=\\\"assets/images/comment.svg\\\" />\\n          <image class=\\\"icon\\\" width=\\\"24\\\" height=\\\"24\\\" />\\n          <text class=\\\"label\\\" />\\n          <text class=\\\"subtitle\\\" />\\n          <text class=\\\"subtitle2\\\" />\\n        </g>\",\n    \"portMarkup\" : \"<circle class=\\\"port-body\\\"/>\",\n    \"portLabelMarkup\" : \"<text class=\\\"port-label\\\"/>\",\n    \"id\" : \"a7e99be3-7819-4dd5-8b94-522e4d690c49\",\n    \"flowItemId\" : \"fa8effcc-53e9-4ec9-b3ef-f55ec7b90d20\",\n    \"flowId\" : \"a17f6897-f137-4fb7-9cda-117ef9a78096\",\n    \"extraAttributes\" : {\n      \"modern\" : true\n    },\n    \"entityType\" : \"OPERATION\",\n    \"entitySubType\" : \"LIST_TRANSFORMATION\",\n    \"triggerCron\" : \"\",\n    \"z\" : 2,\n    \"attrs\" : {\n      \".label\" : {\n        \"text\" : \"Transformation1\",\n        \"ref-x\" : \"0\",\n        \"x\" : 41,\n        \"y\" : 34,\n        \"text-anchor\" : \"left\",\n        \"text-overflow\" : \"ellipsis\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 30,\n        \"fill\" : \"#262626\"\n      },\n      \".body\" : {\n        \"rx\" : 6,\n        \"stroke\" : \"#98D5DD\",\n        \"ry\" : 6,\n        \"color\" : \"#E2F8FB\",\n        \"fill\" : \"#E2F8FB\",\n        \"ref-width\" : \"100%\",\n        \"ref-height\" : \"100%\",\n        \"stroke-width\" : 2\n      },\n      \".icon\" : {\n        \"href\" : \"assets/images/list-transformation-new-small.svg\",\n        \"fontSize\" : 32,\n        \"width\" : 24,\n        \"height\" : 24,\n        \"x\" : 12,\n        \"y\" : 17\n      },\n      \".subtitle\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 14,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      },\n      \".subtitle2\" : {\n        \"text\" : \"\",\n        \"ref-x\" : \"0\",\n        \"x\" : 14,\n        \"y\" : 52,\n        \"text-anchor\" : \"left\",\n        \"font-family\" : \"Inter, \\\"Helvetica Neue\\\", sans-serif\",\n        \"fontSize\" : 9,\n        \"fill\" : \"#666\"\n      },\n      \".comment-icon\" : {\n        \"visibility\" : \"hidden\"\n      },\n      \".link\" : {\n        \"xlink:href\" : \"#\"\n      }\n    }\n  }, {\n    \"type\" : \"link\",\n    \"source\" : {\n      \"id\" : \"baba10d3-055b-4a3a-848a-b4805de4ef32\",\n      \"port\" : \"out\"\n    },\n    \"target\" : {\n      \"id\" : \"a7e99be3-7819-4dd5-8b94-522e4d690c49\",\n      \"port\" : \"in\"\n    },\n    \"id\" : \"4c067691-b87d-432a-8456-0ee296456771\",\n    \"z\" : 3,\n    \"attrs\" : {\n      \".marker-target\" : {\n        \"stroke\" : \"#262626\",\n        \"fill\" : \"#262626\",\n        \"stroke-width\" : 2,\n        \"d\" : \"M 8,4 L 0,0 L 8,-4 z\"\n      }\n    }\n  }, {\n    \"type\" : \"chioro.Element\",\n    \"inPorts\" : [ ],\n    \"outPorts\" : [ ],\n    \"size\" : {\n      \"width\" : 198,\n      \"height\" : 80\n    },\n    \"ports\" : {\n      \"groups\" : {\n        \"in\" : {\n          \"position\" : {\n            \"name\" : \"left\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#16A085\",\n              \"stroke\" : \"#000\",\n              \"r\" : 10,\n              \"magnet\" : true\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"left\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        },\n        \"out\" : {\n          \"position\" : {\n            \"name\" : \"right\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#E74C3C\",\n              \"stroke\" : \"#000\",\n              \"r\" : 10,\n              \"magnet\" : true\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"right\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        }\n      },\n      \"items\" : [ {\n        \"id\" : \"in\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"\"\n          }\n        },\n        \"group\" : \"in\"\n      }, {\n        \"id\" : \"out\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"\"\n          }\n        },\n        \"group\" : \"out\"\n      } ]\n    },\n    \"position\" : {\n      \"y\" : 120,\n      \"x\" : -330\n    },\n    \"angle\" : 0,\n    \"markup\" : \"<g transform=\\\"scale(1,1)\\\" class=\\\"rotatable\\\">\\n          <rect class=\\\"body\\\" fill=\\\"#f7a788\\\"/>\\n          <rect class=\\\"body\\\" fill=\\\"url(#chioroa6941)\\\"><title class=\\\"comments\\\">-</title></rect>\\n          <image class=\\\"comment-icon\\\" width=\\\"12\\\" height=\\\"12\\\" transform=\\\"translate(173, 0)\\\" href=\\\"assets/images/comment.png\\\" />\\n          <defs>\\n            <pattern id=\\\"chioroa6941\\\" x=\\\"60%\\\" y=\\\"100%\\\" width=\\\"1\\\" height=\\\"24\\\" patternTransform=\\\"translate(-24,-26)\\\" >\\n              <image class=\\\"icon\\\" width=\\\"24\\\" height=\\\"24\\\" />\\n            </pattern>\\n          </defs>\\n          <text class=\\\"label\\\"/>\\n          </g>\",\n    \"portMarkup\" : \"<circle class=\\\"port-body\\\"/>\",\n    \"portLabelMarkup\" : \"<text class=\\\"port-label\\\"/>\",\n    \"id\" : \"84b0e5c3-dc85-411d-90e7-84c2dfddf667\",\n    \"entityId\" : \"f25c5f50-feec-4420-8541-54cc351c1406\",\n    \"entityType\" : \"OPERATION\",\n    \"triggerCron\" : \"\",\n    \"z\" : 1,\n    \"attrs\" : {\n      \".label\" : {\n        \"text\" : \"VogelSplit\"\n      },\n      \".comment-icon\" : {\n        \"visibility\" : \"hidden\"\n      },\n      \".body\" : {\n        \"rx\" : 6,\n        \"ry\" : 6\n      },\n      \".icon\" : {\n        \"href\" : \"assets/images/separation-small.png\",\n        \"fill\" : \"#3498DB\",\n        \"fontSize\" : 32\n      },\n      \".link\" : {\n        \"xlink:href\" : \"\"\n      }\n    },\n    \"entitySubType\" : \"SEPARATION\",\n    \"flowItemId\" : \"9b52a125-104e-4852-8885-513c07fc8c44\",\n    \"flowId\" : \"a17f6897-f137-4fb7-9cda-117ef9a78096\"\n  }, {\n    \"type\" : \"link\",\n    \"source\" : {\n      \"id\" : \"a7e99be3-7819-4dd5-8b94-522e4d690c49\",\n      \"port\" : \"out\"\n    },\n    \"target\" : {\n      \"id\" : \"84b0e5c3-dc85-411d-90e7-84c2dfddf667\",\n      \"port\" : \"in\"\n    },\n    \"id\" : \"525795bb-bc62-4122-ae6a-45ab97dfe724\",\n    \"z\" : 3,\n    \"attrs\" : {\n      \".marker-target\" : {\n        \"fill\" : \"yellow\",\n        \"d\" : \"M 10 0 L 0 5 L 10 10 z\"\n      }\n    }\n  }, {\n    \"type\" : \"chioro.Element\",\n    \"inPorts\" : [ ],\n    \"outPorts\" : [ ],\n    \"size\" : {\n      \"width\" : 198,\n      \"height\" : 160\n    },\n    \"ports\" : {\n      \"groups\" : {\n        \"in\" : {\n          \"position\" : {\n            \"name\" : \"left\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"none\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#16A085\",\n              \"stroke\" : \"#000\",\n              \"r\" : 10,\n              \"magnet\" : true\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"left\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        },\n        \"out\" : {\n          \"position\" : {\n            \"name\" : \"right\"\n          },\n          \"attrs\" : {\n            \".port-label\" : {\n              \"fill\" : \"#000\"\n            },\n            \".port-body\" : {\n              \"fill\" : \"#E74C3C\",\n              \"stroke\" : \"#000\",\n              \"r\" : 10,\n              \"magnet\" : true\n            }\n          },\n          \"label\" : {\n            \"position\" : {\n              \"name\" : \"right\",\n              \"args\" : {\n                \"y\" : 10\n              }\n            }\n          }\n        }\n      },\n      \"items\" : [ {\n        \"id\" : \"in\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"\"\n          }\n        },\n        \"group\" : \"in\"\n      }, {\n        \"id\" : \"out\",\n        \"attrs\" : {\n          \".port-label\" : {\n            \"text\" : \"\"\n          }\n        },\n        \"group\" : \"out\"\n      } ]\n    },\n    \"position\" : {\n      \"y\" : 120,\n      \"x\" : -330\n    },\n    \"angle\" : 0,\n    \"markup\" : \"<g transform=\\\"scale(1,1)\\\" class=\\\"rotatable\\\">\\n          <rect class=\\\"body\\\" fill=\\\"#eec5fc\\\"/>\\n          <rect class=\\\"body\\\" fill=\\\"url(#chioro60a5d)\\\"><title class=\\\"comments\\\">-</title></rect>\\n          <image class=\\\"comment-icon\\\" width=\\\"12\\\" height=\\\"12\\\" transform=\\\"translate(173, 0)\\\" href=\\\"assets/images/comment.png\\\" />\\n          <defs>\\n            <pattern id=\\\"chioro60a5d\\\" x=\\\"60%\\\" y=\\\"100%\\\" width=\\\"1\\\" height=\\\"24\\\" patternTransform=\\\"translate(-24,-26)\\\" >\\n              <image class=\\\"icon\\\" width=\\\"24\\\" height=\\\"24\\\" />\\n            </pattern>\\n          </defs>\\n          <text class=\\\"label\\\"/>\\n          </g>\",\n    \"portMarkup\" : \"<circle class=\\\"port-body\\\"/>\",\n    \"portLabelMarkup\" : \"<text class=\\\"port-label\\\"/>\",\n    \"id\" : \"f7a4d138-8f91-45c2-bd47-6ee005be2b9c\",\n    \"entityId\" : \"f6008c61-51e9-41b0-b32e-60e30e282ca0\",\n    \"entityType\" : \"OPERATION\",\n    \"triggerCron\" : \"\",\n    \"z\" : 1,\n    \"attrs\" : {\n      \".label\" : {\n        \"text\" : \"SplitTest\"\n      },\n      \".comment-icon\" : {\n        \"visibility\" : \"hidden\"\n      },\n      \".body\" : {\n        \"rx\" : 6,\n        \"ry\" : 6\n      },\n      \".icon\" : {\n        \"href\" : \"assets/images/split-small.png\",\n        \"fill\" : \"#3498DB\",\n        \"fontSize\" : 32\n      },\n      \".link\" : {\n        \"xlink:href\" : \"\"\n      }\n    },\n    \"entitySubType\" : \"SPLIT\",\n    \"flowItemId\" : \"afe67cc9-abfd-45de-941b-79c40170ad76\",\n    \"flowId\" : \"a17f6897-f137-4fb7-9cda-117ef9a78096\"\n  }, {\n    \"type\" : \"link\",\n    \"source\" : {\n      \"id\" : \"a7e99be3-7819-4dd5-8b94-522e4d690c49\",\n      \"port\" : \"out\"\n    },\n    \"target\" : {\n      \"id\" : \"f7a4d138-8f91-45c2-bd47-6ee005be2b9c\",\n      \"port\" : \"in\"\n    },\n    \"id\" : \"f93e747c-9cea-4dce-8db6-1253cc5fa699\",\n    \"z\" : 3,\n    \"attrs\" : {\n      \".marker-target\" : {\n        \"fill\" : \"yellow\",\n        \"d\" : \"M 10 0 L 0 5 L 10 10 z\"\n      }\n    }\n  } ]\n}",
     "positionOfPaperX" : null,
     "positionOfPaperY" : null,
     "notificationConfigs" : null,
     "createdAt" : "2026-07-29T10:36:47.032712624Z",
-    "updatedAt" : "2026-07-30T07:19:15.680303663+02:00",
+    "updatedAt" : "2026-07-30T07:24:57.631223585+02:00",
     "createdBy" : "lutz.wagner@mgm-tp.com",
     "cleanedUpByTimer" : null,
-    "updatedBy" : "lutz.wagner@mgm-tp.com",
+    "updatedBy" : "agent",
     "permissions" : null,
     "metadata" : null
   }, {
@@ -255,5 +371,63 @@
       "flowItemId" : null
     },
     "updatedAt" : "2026-07-30T07:19:06.940283145+02:00"
+  }, {
+    "_id" : "f25c5f50-feec-4420-8541-54cc351c1406",
+    "createdAt" : "2026-07-30T07:21:40.739871175+02:00",
+    "updatedBy" : "agent",
+    "configVersion" : "1.4",
+    "createdBy" : "agent",
+    "name" : "VogelSplit",
+    "subType" : "SEPARATION",
+    "id" : "f25c5f50-feec-4420-8541-54cc351c1406",
+    "type" : "OPERATION",
+    "version" : 1,
+    "flow" : {
+      "name" : null,
+      "id" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
+      "subType" : null,
+      "type" : "FLOW",
+      "flowId" : null,
+      "flowItemId" : null
+    },
+    "updatedAt" : "2026-07-30T07:22:43.184698364+02:00",
+    "assignmentBlocks" : [ {
+      "label" : "Vögel",
+      "precondition" : "$(\"Tierart\") == \"Vogel\""
+    }, {
+      "label" : "Andere",
+      "precondition" : "$(\"Tierart\") != \"Vogel\""
+    } ]
+  }, {
+    "_id" : "f6008c61-51e9-41b0-b32e-60e30e282ca0",
+    "createdAt" : "2026-07-30T07:23:05.803591205+02:00",
+    "updatedBy" : "agent",
+    "configVersion" : "1.4",
+    "createdBy" : "agent",
+    "name" : "Split1",
+    "subType" : "SPLIT",
+    "id" : "f6008c61-51e9-41b0-b32e-60e30e282ca0",
+    "type" : "OPERATION",
+    "conditions" : [ {
+      "id" : "9700ba3d-e6c9-4a37-b376-2d2d6c75fa53",
+      "order" : 1,
+      "condition" : "$(\"Tierart\") == \"Vogel\"",
+      "port" : "voegel"
+    }, {
+      "id" : "24cb70be-ebde-4b49-96d0-d30ec3fc4f95",
+      "order" : 2,
+      "condition" : "$(\"Tierart\") != \"Vogel\"",
+      "port" : "ohneVoegel"
+    } ],
+    "version" : 1,
+    "flow" : {
+      "name" : null,
+      "id" : "a17f6897-f137-4fb7-9cda-117ef9a78096",
+      "subType" : null,
+      "type" : "FLOW",
+      "flowId" : null,
+      "flowItemId" : null
+    },
+    "updatedAt" : "2026-07-30T07:24:29.892769115+02:00"
   } ]
 }
