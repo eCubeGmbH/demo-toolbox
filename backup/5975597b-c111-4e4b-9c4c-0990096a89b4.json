@@ -1,6 +1,6 @@
 {
   "flowId" : "5975597b-c111-4e4b-9c4c-0990096a89b4",
-  "timestamp" : "2026-07-31T14:14:40.983896+02:00",
+  "timestamp" : "2026-07-31T15:12:21.688437+02:00",
   "objects" : [ {
     "_id" : "5975597b-c111-4e4b-9c4c-0990096a89b4",
     "id" : "5975597b-c111-4e4b-9c4c-0990096a89b4",
@@ -210,7 +210,7 @@
     "configVersion" : "1.4",
     "createdBy" : "developer",
     "name" : "Call1",
-    "subType" : "GENERIC_CALL",
+    "subType" : "SEPARATION",
     "id" : "1151e891-a3af-43fe-bc5c-abdb38a52299",
     "type" : "OPERATION",
     "version" : 1,
@@ -222,6 +222,8 @@
       "flowId" : null,
       "flowItemId" : null
     },
-    "updatedAt" : "2026-07-31T14:12:01.871635+02:00"
+    "updatedAt" : "2026-07-31T14:16:54.028937+02:00",
+    "assignmentBlocks" : [ ],
+    "separationRules" : [ ]
   } ]
 }
